@@ -9,7 +9,7 @@ describe("Tests para ExplorerService", () => {
     });
 
     test("Requerimiento 2: Get Amount Of Explorers By Mission", () =>{
-       const explorers =  [
+        const explorers =  [
             {
                 "name": "Woopa1",
                 "githubUsername": "ajolonauta1",
@@ -32,7 +32,7 @@ describe("Tests para ExplorerService", () => {
                     "elm"
                 ]
             }, 
-        ]
+        ];
 
         const amountOfExplorers =  ExplorerService.getAmountOfExplorersByMission(explorers, "node");
 
