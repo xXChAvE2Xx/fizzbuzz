@@ -202,5 +202,10 @@ describe("Pruebas para ExplorerController", () =>{
             }
         ]);
     });
+
+    test("5. Obtener Fizz, Buzz, Fizzbuzz o score, dependiendo del score recibido", () =>{
+        const scoreFizz = ExplorerController.applyValidationInNumber(3);
+        expect(scoreFizz).toBe("Fizzz");
+    });
   
 });
