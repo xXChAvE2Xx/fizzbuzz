@@ -42,6 +42,17 @@ $ npm install express --save
 | `localhost:3000/v1/explorers/:mission`          | Obtiene la lista de explorers en la misión que enviaste (node o java)       |
 | `localhost:3000/v1/explorers/amount/:mission`   | Obtiene la cantidad de explorers según la misión que enviaste (node o java) |
 | `localhost:3000/v1/explorers/usernames/:mission`| Obtiene la lista de usernames en la misión que enviaste (node o java)       |
+| `localhost:3000/v1/fizzbuzz/:score`             | Recibe un score y regresa Fizz, Buzz, Fizzbuzz o score                      |
+
+### Nueva Funcionalidad
+Se recibira un score que sera validado, y dependiendo del valor del score se regresara 'Fizz', 'Buzz', 'Fizzbuzz' o el score mismo, a continuacion se muestra un ejemplo:	
+
+| Endpoint                                       | Request                         | Response                       |
+|------------------------------------------------| --------------------------------|--------------------------------|
+|`localhost:3000/v1/explorers/:mission`          | `localhost:3000/v1/fizzbuzz/1`  | {score: 1, trick: 1}           |
+|`localhost:3000/v1/explorers/amount/:mission`   | `localhost:3000/v1/fizzbuzz/3`  | {score: 3, trick: "Fizzz"}     |
+|`localhost:3000/v1/explorers/usernames/:mission`| `localhost:3000/v1/fizzbuzz/5`  | {score: 5, trick: "Buzz"}      |
+|`localhost:3000/v1/fizzbuzz/:score`             | `localhost:3000/v1/fizzbuzz/15` | {score: 15, trick: "Fizzbuzz"} |
 
 ## Correr Pruebas
 ```
