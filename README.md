@@ -64,8 +64,8 @@ Se creó código para bot de Telegram el cual tiene las mismas funcionalidades q
 6. Así mismo te dará una url para que abras un nuevo chat con tu bot, enseguida presiona el botón de START, necesitas ejecutar este paso.
 7. En el código, pega tu token en la línea número 5.
 
-| Comando  | Respuesta                       | Response                                                |
-|----------| --------------------------------|---------------------------------------------------------|
+| Comando  | Respuesta                                                                                 |
+|----------| ------------------------------------------------------------------------------------------|
 |`node`    | Devuelve la lista de explorers de la misión `node`                                        |
 |`java`    | Devuelve la lista de explorers de la misión `java`                                        |
 |`numero`  | Devuelve `Fizz`, `Buzz`, `FizzBuzz` o el `score` mismo dependiendo del número ingresado.  |
