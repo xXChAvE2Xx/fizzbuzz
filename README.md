@@ -44,7 +44,7 @@ $ npm install express --save
 | `localhost:3000/v1/explorers/usernames/:mission`| Obtiene la lista de usernames en la misión que enviaste (node o java)       |
 | `localhost:3000/v1/fizzbuzz/:score`             | Recibe un score y regresa Fizz, Buzz, Fizzbuzz o score                      |
 
-### Nueva Funcionalidad
+### Nueva Funcionalidad - FizzBuzz
 Se recibira un score que sera validado, y dependiendo del valor del score se regresara 'Fizz', 'Buzz', 'Fizzbuzz' o el score mismo, a continuacion se muestra un ejemplo:	
 
 | Endpoint                                       | Request                         | Response                       |
@@ -53,6 +53,24 @@ Se recibira un score que sera validado, y dependiendo del valor del score se reg
 |`localhost:3000/v1/explorers/amount/:mission`   | `localhost:3000/v1/fizzbuzz/3`  | {score: 3, trick: "Fizzz"}     |
 |`localhost:3000/v1/explorers/usernames/:mission`| `localhost:3000/v1/fizzbuzz/5`  | {score: 5, trick: "Buzz"}      |
 |`localhost:3000/v1/fizzbuzz/:score`             | `localhost:3000/v1/fizzbuzz/15` | {score: 15, trick: "Fizzbuzz"} |
+
+## Nueva Funcionalidad - Bot Telegram
+Se creó código para bot de Telegram el cual tiene las mismas funcionalidades que el acceder a `localhost:3000`, para poder usar el bot necesitas realizar lo siguiente:
+1. Descarga y crea una cuenta de Telegram.
+2. Accede al Bot Father: [BotFather](https://telegram.me/BotFather)
+3. En el chat del bot father envía un mensaje con el texto: /start y luego /newbot
+4. Te pedirá un nombre para tu bot, asígnale cualquier nombre.
+5. Guarda el token de tu nuevo bot, esta es información sensible 5112341234:AFCB-c7Jaa2TNt0-s872QGOAiUtqcsdewdwedwo.
+6. Así mismo te dará una url para que abras un nuevo chat con tu bot, enseguida presiona el botón de START, necesitas ejecutar este paso.
+7. En el código, pega tu token en la línea número 5.
+
+| Comando  | Respuesta                       | Response                                                |
+|----------| --------------------------------|---------------------------------------------------------|
+|`node`    | Devuelve la lista de explorers de la misión `node`                                        |
+|`java`    | Devuelve la lista de explorers de la misión `java`                                        |
+|`numero`  | Devuelve `Fizz`, `Buzz`, `FizzBuzz` o el `score` mismo dependiendo del número ingresado.  |
+
+![Bot Demo](https://user-images.githubusercontent.com/54995852/167234476-b34ee979-dfbc-47fe-87c6-c20a9d559988.gif)
 
 ## Correr Pruebas
 ```
