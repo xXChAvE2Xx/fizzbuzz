@@ -92,7 +92,7 @@ Se creó código para bot de Telegram el cual tiene las mismas funcionalidades q
 4. Te pedirá un nombre para tu bot, asígnale cualquier nombre.
 5. Guarda el token de tu nuevo bot, esta es información sensible 5112341234:AFCB-c7Jaa2TNt0-s872QGOAiUtqcsdewdwedwo.
 6. Así mismo te dará una url para que abras un nuevo chat con tu bot, enseguida presiona el botón de START, necesitas ejecutar este paso.
-7. En el código, pega tu token en la línea número 5.
+7. En el archivo `./lib/bot.js` pega tu token en la línea número 5.
 
 | Comando  | Respuesta                                                                                 |
 |----------| ------------------------------------------------------------------------------------------|
